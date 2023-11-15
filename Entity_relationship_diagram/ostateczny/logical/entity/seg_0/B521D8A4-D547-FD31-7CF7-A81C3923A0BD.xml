@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B521D8A4-D547-FD31-7CF7-A81C3923A0BD" name="KIERUNEK STUDIÓW">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>A1D515B9-ED84-8984-7B65-48383A226BFF</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="12933578-EBC6-975F-67EA-98FDD0E38F22">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>6C9363D5-F2B4-E865-9FE8-B2A6BF3F9E4C</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="49FC6359-3F3B-4FB3-E257-E22096B66256">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Łączy studenta i wydział]]></commentInRDBMS>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>679A71D5-05DD-F487-8D94-AE992FEE8491</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="0B86D106-52C5-D99C-C57C-87226AED7DC2">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<generatorID>57B6BC02-96A2-7158-E11B-68AA59A60003</generatorID>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>851A3D97-B8AE-39B1-8FFA-D38092A363C3</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<referedAttribute>AD6E6464-6DEB-0503-3C55-67C62BC33E21</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8FB4CD58-4F26-1FD5-9845-1895498BE0F2" name="KIERUNEK STUDIÓW PK">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>2508595F-DC4E-0430-4B11-B599EC37C65B</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>12933578-EBC6-975F-67EA-98FDD0E38F22</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D38E01E0-EA09-B96B-A3A5-EAC2CD728F20" name="SALA">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>B3C2EE05-FF9A-8464-1002-8AAE9219C409</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="D3683D5A-AF22-487E-9316-4627B74F9375">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>A1E77EAE-E2DC-0B43-4FC0-7A284D291851</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="01CB866F-C8A7-475E-A2DB-2DC880B89874">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Połączyć z budynkiem]]></commentInRDBMS>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>B7402EAC-BA15-E6BE-AE0A-B39DC4F2B315</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Typ" id="76F591E3-52BB-2D16-680E-726C9781C222">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>96ECBCE4-ADE1-D1CD-D82F-D1B28D0B3F5A</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A6D164FD-A788-24E8-A789-B1F0B0E86CD5" name="SALA PK">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>43B714ED-714E-7579-D9DF-A4FED9FE5B30</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D3683D5A-AF22-487E-9316-4627B74F9375</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

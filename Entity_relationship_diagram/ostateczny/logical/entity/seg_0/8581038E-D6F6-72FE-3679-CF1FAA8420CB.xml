@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8581038E-D6F6-72FE-3679-CF1FAA8420CB" name="STUDENT">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>A3A8EC24-2331-9BEB-A6D0-B813F2C1A467</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nr indeksu" id="F4643FC8-ABA2-C07C-0B3B-E249A428898E">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<comment><![CDATA[Czy studenta trzeba łączyć z szczegołamu kursu/kursem?]]></comment>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>3D2B9D82-15C0-D480-8F88-62784205884C</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Imię" id="BA0A6DF5-EF1A-E233-2FFA-D2BF9EBE2F31">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>F02C507A-F39D-33CB-0593-8CC58D980E70</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwisko" id="F49554FE-365A-196D-D3D8-582D1F90CA00">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>B43527DB-37A6-82C1-D52B-54A8D6790910</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kierunek studiów" id="75C78B8C-61D5-EF22-F64D-85374B78F2B7">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>4075D31A-E972-5F31-452B-C5D62AA40CCF</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Obecny semestr" id="9FFB7223-02DB-7CBC-ACE9-CF539C677BFD">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>C9529BF5-9ECD-FD91-5A65-EAF3FD3E0305</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Liczba punktów ECTS" id="41A92E2C-3501-043C-F095-0EBFE056E262">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>5D7EF59E-9DED-9D7F-E4B8-96568FDD0DED</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Stopień studiów" id="8F0F0452-0F53-8F4D-D74D-3711AA6CBF06">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>FEF8E9B0-82F4-0382-3F41-E6D3F78B9F48</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="49A2C8B8-8544-F59E-D8E8-C890DEEEA87B" name="STUDENT PK">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>F34E9BA1-BF85-6FFB-9529-C7F6CC52ECC2</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F4643FC8-ABA2-C07C-0B3B-E249A428898E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

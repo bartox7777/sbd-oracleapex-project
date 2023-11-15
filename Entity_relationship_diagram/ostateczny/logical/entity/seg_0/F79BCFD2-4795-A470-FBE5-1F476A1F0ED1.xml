@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F79BCFD2-4795-A470-FBE5-1F476A1F0ED1" name="WYDZIAŁ">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:24 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>24A5F821-8973-BCB4-B359-59D45ACC617D</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="AD6E6464-6DEB-0503-3C55-67C62BC33E21">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>8F90C38F-AE86-75AC-0F6F-D063D2E8B82A</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="926F7AFA-B377-1105-79A8-575D76FA325B">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>49973AB9-942E-8BC3-48F2-AD6A408F5A44</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="072189CC-0DD2-0B50-8826-35783F7BF32E" name="WYDZIAŁ PK">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>A9395F32-3B91-211B-9859-D1E7F852CEFE</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AD6E6464-6DEB-0503-3C55-67C62BC33E21</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E40A562-EA7D-C023-8F6A-14EDA3B6E6D8" name="KURS">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>73F6F4A8-FF5B-2369-1231-DBB79ACEDF67</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="F7B4A6FB-4995-F42D-BA6C-CBB13BA6732D">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>C9B48DE3-60C3-BD67-E29F-02F23A5FCB4B</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="8FA3AB27-56D0-51DC-51A2-71157E024397">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>48085116-60CE-A86A-53B0-472C59570ACF</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kierownik kursu" id="1CA26383-1059-FF34-D0F2-1CB6F4E089B3">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>CF1DA0B3-96EA-A5C3-89DB-B0496D7FDE9B</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Punkty ECTS" id="2FF36943-0ED9-F431-1206-78FAE4A69673">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>A293E64A-36E8-E1E3-DB53-D828C949F5EC</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rok akademicki" id="4B4F4C59-7E9F-279F-4F29-5F4F2AD589BB">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[21/22]]></commentInRDBMS>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>B203E3C2-7253-3F79-A1D6-49DEA3107E7C</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="A96E4411-4224-FF0D-0326-7D71F73380B7">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:37:06 UTC</createdTime>
+<generatorID>9BDD7D31-7D17-41F0-745F-EFC680D0EE55</generatorID>
+<ownerDesignName>ostateczny</ownerDesignName>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<referedAttribute>12933578-EBC6-975F-67EA-98FDD0E38F22</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3A3B6609-0D92-AC82-3BAD-F7CDF90A0A3A" name="KURS PK">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>EB2A18D7-3F06-A396-57F8-52B32D97232D</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7B4A6FB-4995-F42D-BA6C-CBB13BA6732D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

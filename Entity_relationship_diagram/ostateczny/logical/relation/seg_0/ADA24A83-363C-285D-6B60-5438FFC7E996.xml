@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_23" directorySegmentName="seg_0" id="ADA24A83-363C-285D-6B60-5438FFC7E996">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:36:14 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<sourcePk>A6D164FD-A788-24E8-A789-B1F0B0E86CD5</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>Jest zarezerwowana przez</nameOnSource>
+<nameOnTarget>Rezerwuje</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D38E01E0-EA09-B96B-A3A5-EAC2CD728F20</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BC6D52B6-2DB7-B440-56D4-8B6B8584EB69</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

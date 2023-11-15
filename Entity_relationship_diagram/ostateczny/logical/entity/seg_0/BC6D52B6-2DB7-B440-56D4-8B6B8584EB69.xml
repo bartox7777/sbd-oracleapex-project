@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BC6D52B6-2DB7-B440-56D4-8B6B8584EB69" name="REZERWACJA SALI">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>51218ED9-6428-7A08-9B13-834B3B3FC6F2</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Godzina" id="53803D63-81F0-79AB-AD96-82439CE3072E">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>062F0232-4169-7582-5931-0D0530351E8C</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dzień tygodnia" id="E9F5B62C-9931-20BB-3899-0C832A3C9945">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>EE61BCEF-4C42-5B08-4C65-458FF654AD4A</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tydzień" id="7025C311-F51B-247F-17EB-EC4C3F86EB80">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[parzysty/nieparzysty każdy]]></commentInRDBMS>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>3864E916-B47E-43CF-0151-0110707FB020</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="4A674563-6D95-DBD5-14DA-4CEF28CBBA5C">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:35:41 UTC</createdTime>
+<generatorID>48CCEBE6-DF11-AE7C-3707-3DFAB0BD8C05</generatorID>
+<ownerDesignName>ostateczny</ownerDesignName>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<referedAttribute>19B9660A-78DD-B635-F224-67BA24843971</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID2" id="5F03AF64-5CBB-DA2F-ED38-6F448C8FC09B">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:36:14 UTC</createdTime>
+<generatorID>ADA24A83-363C-285D-6B60-5438FFC7E996</generatorID>
+<ownerDesignName>ostateczny</ownerDesignName>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<referedAttribute>D3683D5A-AF22-487E-9316-4627B74F9375</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA9117C3-3C8C-64FF-8EF0-4D6BE40FB6B6" name="REZERWACJA SALI PK">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>C7667A10-8468-CFBF-24D8-6799E7534253</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A674563-6D95-DBD5-14DA-4CEF28CBBA5C</attributeRef>
+<attributeRef>5F03AF64-5CBB-DA2F-ED38-6F448C8FC09B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

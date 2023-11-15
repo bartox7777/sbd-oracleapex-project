@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ostateczny" id="3E617F19-E22D-AE64-BAC5-EA0F813AFB2A" version="3.5">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:30:54 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3E617F19-E22D-AE64-BAC5-EA0F813AFB2A</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="16220B65-4F8D-41B6-255E-1DBEEB57B17C">
+<designStoragePath>D:\Bazy danych 2\probageneralna\probageneralna</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

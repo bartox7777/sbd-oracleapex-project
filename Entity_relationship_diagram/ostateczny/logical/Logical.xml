@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="B5E66525-E92A-A6DE-48EF-BD6AA965F40F" mainViewID="6F4884B2-4094-3DF1-82D5-43A73EFA95FF">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:30:54 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

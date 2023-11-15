@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_10" directorySegmentName="seg_0" id="B3336504-553A-FA96-7242-A08AB1686FCE">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-15 20:31:25 UTC</createdTime>
+<ownerDesignName>ostateczny</ownerDesignName>
+<importedID>6C3A289E-894E-F5FA-3E90-1734D1075D1E</importedID>
+<engineerTo>
+<item key="A22E9996-1AA6-BE66-FB3E-1E60629473FD" value="true"/>
+</engineerTo>
+<sourcePk>7C6A6E76-358C-2225-0ED7-082AAC52691E</sourcePk>
+<targetPk>5FB29EBC-A62E-7F97-1DE9-147AC3EC210B</targetPk>
+<identifying>false</identifying>
+<nameOnSource>Są prowadzone przez</nameOnSource>
+<nameOnTarget>Prowadzi</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>38DA69D0-B2CE-A9EC-5AA0-C8A58FEA3FE9</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9555C380-879B-17C6-F738-4CEEE4314AF1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="65A013B8-9A91-F19A-E959-6770D6AAD4BD" containerWithKeyObject="0588B4CA-E791-DB8A-EC76-DDF142AC4F92" localFKIndex="2304E264-019D-D3D6-E6FF-3CF532BC8983" name="Zajecia">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>F35C4215-91EB-7B74-F400-65FB0BD0EA8D</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<referredTableLongName>ZAJECIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2D287B36-96C1-1A9A-5D00-19552DBD40C8</referredTableID>
+<keyObject>8D74D3FA-2C7E-FAE6-7B1E-99DB1D55CD2E</keyObject>
+<referredKeyID>8D74D3FA-2C7E-FAE6-7B1E-99DB1D55CD2E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

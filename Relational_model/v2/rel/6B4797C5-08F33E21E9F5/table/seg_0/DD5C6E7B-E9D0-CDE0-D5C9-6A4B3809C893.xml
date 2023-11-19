@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD5C6E7B-E9D0-CDE0-D5C9-6A4B3809C893" name="WYDZIALY">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>79956C7D-569E-A9D5-13FE-BA02AC35C979</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="34C39408-FAA9-B72A-FE91-6330E0361537">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>16A15934-F524-D752-03AA-1DF166381C74</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="FB66A650-9C2F-00AA-2E9A-AE93949BA95D">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>E0A29816-8F3A-E8E5-AEE8-F8659B4A5228</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E90DEC2A-1DC8-EB67-23C8-97505FF56774" name="WYDZIAL_PK">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>AF04035B-809E-0C07-3D60-16BDD92D046E</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34C39408-FAA9-B72A-FE91-6330E0361537"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9BF4C26D-1ACD-F2D2-D0EE-8E5E88AC4184" name="GRUPY_STUDENTOW">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<ownerDesignName>v2</ownerDesignName>
+<ordsAlias>relation_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STUDENT_ID" id="7A540CB8-321D-29BE-1ECD-E296C9F84FBC">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02266333-1B01-AE1B-6BA5-E962B69EE7EC" referredColumn="4A78AE45-ED0D-6F45-C93E-C62329822EB7"/>
+</associations>
+</Column>
+<Column name="GRUPA_ID" id="4C9175ED-B73B-A977-542F-3A57DECAE702">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CB124C9-1AB3-11B5-C1C4-3AF66A7617AA" referredColumn="8A1DF0F9-745A-CB3E-5100-F19C51279606"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63457F79-2AF8-7226-AE04-4C4741773E65" name="Grupy_Studentow_PK">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<ownerDesignName>v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A540CB8-321D-29BE-1ECD-E296C9F84FBC"/>
+<colUsage columnID="4C9175ED-B73B-A977-542F-3A57DECAE702"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DEBFB70-BD34-F5C1-22C5-A4D989937B30" name="Student">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>97B79F0D-F9F6-CBC0-8B74-279C2D250653</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A540CB8-321D-29BE-1ECD-E296C9F84FBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AFCD3A2-D5B7-5A8B-D21E-55F7F3989D96" name="Grupav2">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>97B79F0D-F9F6-CBC0-8B74-279C2D250653</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C9175ED-B73B-A977-542F-3A57DECAE702"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

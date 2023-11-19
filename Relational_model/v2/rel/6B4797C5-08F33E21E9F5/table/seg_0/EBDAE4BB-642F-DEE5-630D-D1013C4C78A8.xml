@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EBDAE4BB-642F-DEE5-630D-D1013C4C78A8" name="KURSY">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>55F5D22F-E97A-5F90-87C8-336D62448AE1</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<ordsAlias>kurs</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2A8D7B8E-9543-5599-6D50-BA962D74B9CD">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>40A415C5-B8BF-57E3-05D4-E269DD1C6D89</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="EE2D1A93-FBA6-A7F5-0467-D38B47782B37">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>F3EB8340-A842-2E7D-B901-13B4AA8787BD</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Punkty_ECTS" id="C1AE6AE5-E83A-808F-A043-18BFBEDADD72">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>D95E1B35-9639-7673-2D89-1E5B381ECF70</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rok_akademicki" id="BB1BF19F-379F-8B01-E0AE-5E6B1682B72B">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>6DE4118D-B2DA-726C-7F83-9D807AFA787B</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KIERUNEK_STUDIOW_ID" id="09C9AE72-89CB-272C-F619-C738087D0171">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>096F1530-8C9B-A2E8-DF87-F9CD0333BE83</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="762F737C-B696-E04E-6059-C85BA91E3CBA" referredColumn="DA0FA714-D421-353A-C8FB-AF93A60D6A2F"/>
+</associations>
+</Column>
+<Column name="Kierownik_kursu" id="9AB030B0-29C1-6661-E2ED-438BB3DC069D">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 15:01:22 UTC</createdTime>
+<ownerDesignName>v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF0D4D84-3B5E-BBDE-893E-25C1A4A5C778" referredColumn="7FB3CE22-8DED-E5B8-B780-C54F7C6B9DFF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4DF016A0-B359-3C35-25A8-00C76D38036F" name="KURS_PK">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>A7C15A02-16C7-0CE0-5E12-81F76F71723E</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A8D7B8E-9543-5599-6D50-BA962D74B9CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFA5B389-19BF-18B5-72A5-04BB6B479917" name="Kierunek">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>3199E53F-CC1E-D559-5413-928EF73C2034</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09C9AE72-89CB-272C-F619-C738087D0171"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEF20ADC-7F6F-2BD4-E16B-952BD2DA85E4" name="Kierownik_kursu_id">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 15:01:22 UTC</createdTime>
+<generatorID>7359CB9A-C886-76E5-B39F-7EAB08F259AB</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB030B0-29C1-6661-E2ED-438BB3DC069D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

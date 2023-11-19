@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51CFFC17-7764-8414-DEDB-51DB9919155A" name="KIERUNKI_STUDIOW">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>CB9BABF9-83AA-5582-12CE-7690EADF8D3D</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<ordsAlias>kierunek_studiow</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="DA0FA714-D421-353A-C8FB-AF93A60D6A2F">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>BE870989-239A-745F-3DC4-AC1CC1CD769E</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="65982A33-1C9B-08E4-1378-DB96FD380A50">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>CC81DEE3-D25D-AF9C-9300-5F7BB509728F</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WYDZIAL_ID" id="063324C4-8BC4-9CC1-30B4-D93DA42DDB38">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>57DDDAFE-39F7-7ED8-289B-337A9D62A142</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="061B3890-8843-82F1-012F-9B7CF9EA4E2B" referredColumn="34C39408-FAA9-B72A-FE91-6330E0361537"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="757B0B4E-FFDC-8EE1-84D1-9721A769D5C3" name="KIERUNEK_STUDIÓW_PK">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>7B1926E7-EB81-D88A-448E-6014ED6F350D</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA0FA714-D421-353A-C8FB-AF93A60D6A2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7736462-9B45-2E17-85B2-E785BBDDD77D" name="Wydzial">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>C5F18486-0C11-F40E-9065-A893F09097C8</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="063324C4-8BC4-9CC1-30B4-D93DA42DDB38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

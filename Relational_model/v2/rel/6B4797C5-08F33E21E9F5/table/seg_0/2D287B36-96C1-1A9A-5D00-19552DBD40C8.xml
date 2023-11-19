@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2D287B36-96C1-1A9A-5D00-19552DBD40C8" name="ZAJECIA">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>E87D184B-7054-EE1F-BDB1-D56659D783B4</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="F6D97F6F-1754-5AC6-C17D-531A59B3D871">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>462F2608-4F56-4536-4C91-37453E4D185C</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Forma_zajec" id="10F631C6-946B-CA7C-B300-B1811ED59449">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>E9DD25B9-05E0-A525-369B-7AA94FCA3810</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="Cwiczenia" description=""/>
+<valueDef value="Laboratoria" description=""/>
+<valueDef value="Projekt" description=""/>
+<valueDef value="Wyklad" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ilosc_godzin" id="17BEAD56-41EB-6C7D-5762-3C88942FC2DB">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>9B0F5ABA-82BA-2893-7728-C368DBF775E6</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9001</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="GRUPA_ID" id="BF576DE8-EE98-84B4-2EF2-41C3E269892E">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>CFEF0C16-C342-5FF9-5B11-872F08E3B8A7</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C877B1AF-6DC9-AAD3-D09E-1A6071CF418E" referredColumn="8A1DF0F9-745A-CB3E-5100-F19C51279606"/>
+</associations>
+</Column>
+<Column name="KURS_ID" id="F5110CA2-8D11-F33C-F920-7E71ADA09475">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>E6A8F85A-5A4C-F5F5-C11C-B20C9C980E47</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7EB6CED4-B50F-2662-E60C-56A09DA25CD6" referredColumn="2A8D7B8E-9543-5599-6D50-BA962D74B9CD"/>
+</associations>
+</Column>
+<Column name="PRACOWNIK_ID" id="7B2C671B-361D-ADC9-6521-8717804831A0">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>977B040F-0813-53C6-FE1F-DFA5D7819524</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B150C4BF-33AD-05B2-8C47-F08DD77B942C" referredColumn="7FB3CE22-8DED-E5B8-B780-C54F7C6B9DFF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D74D3FA-2C7E-FAE6-7B1E-99DB1D55CD2E" name="ZAJĘCIA_PK">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>97077139-3598-2CCE-1A0A-720EF1ED3767</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6D97F6F-1754-5AC6-C17D-531A59B3D871"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A038C10-6276-025D-8B32-047479C7262B" name="Dydaktyk">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>7B749873-489D-9E51-28C3-860F048524FE</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B2C671B-361D-ADC9-6521-8717804831A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC8D5AF3-3400-F096-FCB3-D07AA0098F0E" name="Kurs">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>E3477BF7-B84A-E75C-15C4-18144538AC13</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5110CA2-8D11-F33C-F920-7E71ADA09475"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CC11425-B787-9D21-6E2E-C8079CE39D67" name="Grupa">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>9865A0EB-A409-7629-3038-4EB521F4BA35</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF576DE8-EE98-84B4-2EF2-41C3E269892E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

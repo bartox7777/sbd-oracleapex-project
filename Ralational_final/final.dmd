@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="final" id="44C3409A-2534-2BA7-5EF7-B51CD03CD2D3" version="3.5">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 13:54:21 UTC</createdTime>
+<ownerDesignName>v2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>44C3409A-2534-2BA7-5EF7-B51CD03CD2D3</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="16220B65-4F8D-41B6-255E-1DBEEB57B17C">
+<designStoragePath>D:\Bazy danych 2\probageneralna\probageneralna</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="3E617F19-E22D-AE64-BAC5-EA0F813AFB2A">
+<designStoragePath>F:\GitHub\sbd-projekt\Entity_relationship_diagram\ostateczny</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

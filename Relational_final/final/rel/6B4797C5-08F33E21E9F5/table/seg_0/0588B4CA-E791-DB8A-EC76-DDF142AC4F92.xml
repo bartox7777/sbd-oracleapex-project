@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0588B4CA-E791-DB8A-EC76-DDF142AC4F92" name="REZERWACJE_SAL">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>69C79B83-0B1A-3788-097C-EBA651884722</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<ordsAlias>rezerwacja_sali</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="10D61CA1-CF77-304D-B15C-7B1298B1311A">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-25 19:01:38 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Jednostka_zajeciowa" id="09DA88D1-B4A0-9BCC-6FAC-C2562136080A">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>5D8041A6-62F4-B414-9B9E-9B8223610EED</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>20</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="Dzien_tygodnia" id="19D835BB-9D67-C787-3742-345854F8AA07">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>047BFA9E-78E5-5B4A-CB13-1AF486FCF9ED</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Czw" description=""/>
+<valueDef value="Nd" description=""/>
+<valueDef value="Pon" description=""/>
+<valueDef value="Pt" description=""/>
+<valueDef value="Sob" description=""/>
+<valueDef value="Sr" description=""/>
+<valueDef value="Wt" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tydzien" id="5A146811-1835-91CB-86AE-FCB0A54C485E">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[0 - parzyste
+1 - nieparzyste
+
+jeśli zajęcia odbywają się w każdy tydzień to należy dodać 2 rekordy z 0 i 1]]></commentInRDBMS>
+<generatorID>78FA75F9-F86F-E21B-2C78-9C5BD32F0F38</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZAJECIA_ID" id="91461ED0-1F97-CF52-60FD-F4C3571F3C76">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>F73BBC21-1F7B-B7B7-CA0D-402F080117CE</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65A013B8-9A91-F19A-E959-6770D6AAD4BD" referredColumn="F6D97F6F-1754-5AC6-C17D-531A59B3D871"/>
+</associations>
+</Column>
+<Column name="SALA_ID" id="7720C789-C676-1BE2-D279-0DC42BEC4A96">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>39FE795A-E6DB-88AA-B5FE-2C614F2D5D08</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D3D9FE5-B6FC-7DA9-6BFA-CC237CD190A0" referredColumn="B6F2D85D-EFD2-FB4C-C166-D59D55126F30"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96963BDB-1AC5-1980-210C-4D10B46D0BF6" name="REZERWACJA_SALI_PK">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>6359726B-091B-016D-2DAA-983FDD1962EC</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10D61CA1-CF77-304D-B15C-7B1298B1311A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35B446B1-B902-A322-14D4-BBD4AE46E054" name="REZERWACJE_UNIQUE">
+<createdBy>kubic</createdBy>
+<createdTime>2023-11-25 19:03:36 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09DA88D1-B4A0-9BCC-6FAC-C2562136080A"/>
+<colUsage columnID="19D835BB-9D67-C787-3742-345854F8AA07"/>
+<colUsage columnID="5A146811-1835-91CB-86AE-FCB0A54C485E"/>
+<colUsage columnID="7720C789-C676-1BE2-D279-0DC42BEC4A96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2304E264-019D-D3D6-E6FF-3CF532BC8983" name="Zajecia">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>F35C4215-91EB-7B74-F400-65FB0BD0EA8D</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91461ED0-1F97-CF52-60FD-F4C3571F3C76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF342305-FC70-9032-18E8-383674B22565" name="Sala">
+<createdBy>Kuba</createdBy>
+<createdTime>2023-11-19 14:11:28 UTC</createdTime>
+<generatorID>CA68DF1D-9F9A-6D6B-1FEF-7731C3A7E327</generatorID>
+<ownerDesignName>v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7720C789-C676-1BE2-D279-0DC42BEC4A96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

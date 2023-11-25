@@ -1,0 +1,16 @@
+CREATE OR REPLACE FUNCTION oblicz_punkty_ects(nr_indeksu_studenta IN INTEGER)
+RETURN INTEGER
+IS
+    suma_ects INTEGER := 0;
+BEGIN
+    SELECT SUM(k.punkty_ects)
+    INTO suma_ects
+    FROM oceny o
+    JOIN zajecia z ON o.zajecia_id = z.id
+    JOIN kursy k ON z.kurs_id = k.id
+    WHERE o.student_id = nr_indeksu_studenta
+    AND o.stopien != '2.0';
+
+    RETURN suma_ects;
+END;
+/

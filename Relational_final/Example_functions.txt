@@ -1,16 +1,50 @@
-CREATE OR REPLACE FUNCTION oblicz_punkty_ects(nr_indeksu_studenta IN INTEGER)
-RETURN INTEGER
-IS
-    suma_ects INTEGER := 0;
-BEGIN
-    SELECT SUM(k.punkty_ects)
-    INTO suma_ects
-    FROM oceny o
-    JOIN zajecia z ON o.zajecia_id = z.id
-    JOIN kursy k ON z.kurs_id = k.id
-    WHERE o.student_id = nr_indeksu_studenta
-    AND o.stopien != '2.0';
+1.Wyliczanie punktów ECTS które zdobył dany student
 
-    RETURN suma_ects;
-END;
-/
+	CREATE OR REPLACE FUNCTION oblicz_punkty_ects(nr_indeksu_studenta IN INTEGER)
+	RETURN INTEGER
+	IS
+		suma_ects INTEGER := 0;
+	BEGIN
+		SELECT SUM(k.punkty_ects)
+		INTO suma_ects
+		FROM oceny o
+		JOIN zajecia z ON o.zajecia_id = z.id
+		JOIN kursy k ON z.kurs_id = k.id
+		WHERE o.student_id = nr_indeksu_studenta
+		AND o.stopien <> '2.0';
+
+		RETURN suma_ects;
+	END;
+	/
+
+
+2.Uniemożliwienie wstawienia pracownikowi zajęć, które przekraczałyby jego limit godzin w semestrze
+
+	CREATE OR REPLACE TRIGGER sprawdz_limit_godzin_przy_dodawaniu_zajec
+	BEFORE INSERT ON zajecia
+	FOR EACH ROW
+	DECLARE
+		tygodniowy_limit INTEGER;
+		ilosc_godzin_w_semestrze INTEGER;
+		suma_godzin INTEGER;
+	BEGIN
+		SELECT tygodniowy_limit_godzin INTO tygodniowy_limit
+		FROM pracownicy
+		WHERE id = :NEW.pracownik_id;
+
+		IF tygodniowy_limit IS NOT NULL AND tygodniowy_limit > 0 THEN
+			ilosc_godzin_w_semestrze := tygodniowy_limit * 15; -- 15 tygodni w semestrze (wartość domyślna)
+
+			-- Oblicz sumę godzin z zajęć prowadzonych przez pracownika
+			SELECT COALESCE(SUM(ilosc_godzin), 0)
+			INTO suma_godzin
+			FROM zajecia
+			WHERE pracownik_id = :NEW.pracownik_id;
+
+			-- Sprawdź limit godzin
+			IF :NEW.ilosc_godzin + suma_godzin > ilosc_godzin_w_semestrze THEN
+				RAISE_APPLICATION_ERROR(-20001, 'Przekroczony tygodniowy limit godzin pracy pracownika w semestrze.');
+			END IF;
+		END IF;
+	END;
+	/

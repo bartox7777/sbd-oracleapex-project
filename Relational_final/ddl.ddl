@@ -48,7 +48,7 @@ CREATE TABLE kierunki_studiow (
     wydzial_id INTEGER NOT NULL
 );
 
-ALTER TABLE kierunki_studiow ADD CONSTRAINT kierunek_studiów_pk PRIMARY KEY ( id );
+ALTER TABLE kierunki_studiow ADD CONSTRAINT kierunek_studiow_pk PRIMARY KEY ( id );
 
 CREATE TABLE kursy (
     id                  INTEGER NOT NULL,
@@ -133,13 +133,13 @@ CREATE TABLE studenci (
     imie                VARCHAR2(30) NOT NULL,
     nazwisko            VARCHAR2(30) NOT NULL,
     obecny_semestr      INTEGER NOT NULL,
-    liczba_punktów_ects INTEGER,
+    liczba_punktow_ects INTEGER,
     stopien_studiow     INTEGER NOT NULL
 );
 
 ALTER TABLE studenci ADD CHECK ( obecny_semestr BETWEEN 1 AND 12 );
 
-ALTER TABLE studenci ADD CHECK ( liczba_punktów_ects > 0 );
+ALTER TABLE studenci ADD CHECK ( liczba_punktow_ects >= 0 );
 
 ALTER TABLE studenci ADD CONSTRAINT student_pk PRIMARY KEY ( nr_indeksu );
 

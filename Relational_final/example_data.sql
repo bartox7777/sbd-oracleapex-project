@@ -104,6 +104,19 @@ INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy
 INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1F'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Piotr' AND nazwisko = 'Nowak'));
 END;
 
+BEGIN
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Jan' AND nazwisko = 'Kowalski'));
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Adam' AND nazwisko = 'Nowak'));
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Anna' AND nazwisko = 'Kowalska'));
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Katarzyna' AND nazwisko = 'Nowak'));
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Piotr' AND nazwisko = 'Kowalski'));
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Jan' AND nazwisko = 'Nowak'));
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Adam' AND nazwisko = 'Kowalski'));
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Anna' AND nazwisko = 'Nowak'));
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Katarzyna' AND nazwisko = 'Kowalska'));
+INSERT INTO kierunki_studentow (kierunek_studiow_id, student_id) VALUES ((SELECT id FROM kierunki_studiow WHERE nazwa = 'Automatyka i Robotyka'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Piotr' AND nazwisko = 'Nowak'));
+END;
+
 
 -- DELETE FROM studenci;
 -- DELETE FROM sale;

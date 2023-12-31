@@ -71,6 +71,39 @@ INSERT INTO zajecia (forma_zajec, ilosc_godzin, grupa_id, kurs_id, pracownik_id)
 INSERT INTO zajecia (forma_zajec, ilosc_godzin, grupa_id, kurs_id, pracownik_id) VALUES ('Laboratoria', 30, (SELECT id FROM grupy WHERE nazwa = '1G'), (SELECT id FROM kursy WHERE nazwa = 'Analiza Matematyczna'), (SELECT id FROM pracownicy WHERE imie = 'Katarzyna' AND nazwisko = 'Nowak'));
 END;
 
+BEGIN
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1A'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Jan' AND nazwisko = 'Kowalski'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1A'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Adam' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1A'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Anna' AND nazwisko = 'Kowalska'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1A'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Katarzyna' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1A'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Piotr' AND nazwisko = 'Kowalski'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1B'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Jan' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1B'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Adam' AND nazwisko = 'Kowalski'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1B'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Anna' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1B'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Katarzyna' AND nazwisko = 'Kowalska'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1B'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Piotr' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1C'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Jan' AND nazwisko = 'Kowalski'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1C'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Adam' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1C'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Anna' AND nazwisko = 'Kowalska'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1C'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Katarzyna' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1C'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Piotr' AND nazwisko = 'Kowalski'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1D'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Jan' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1D'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Adam' AND nazwisko = 'Kowalski'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1D'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Anna' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1D'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Katarzyna' AND nazwisko = 'Kowalska'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1D'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Piotr' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1E'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Jan' AND nazwisko = 'Kowalski'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1E'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Adam' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1E'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Anna' AND nazwisko = 'Kowalska'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1E'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Katarzyna' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1E'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Piotr' AND nazwisko = 'Kowalski'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1F'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Jan' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1F'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Adam' AND nazwisko = 'Kowalski'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1F'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Anna' AND nazwisko = 'Nowak'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1F'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Katarzyna' AND nazwisko = 'Kowalska'));
+INSERT INTO grupy_studentow (grupa_id, student_id) VALUES ((SELECT id FROM grupy WHERE nazwa = '1F'), (SELECT nr_indeksu FROM studenci WHERE imie = 'Piotr' AND nazwisko = 'Nowak'));
+END;
+
 
 -- DELETE FROM studenci;
 -- DELETE FROM sale;
